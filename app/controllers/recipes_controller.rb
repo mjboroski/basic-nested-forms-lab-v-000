@@ -23,8 +23,9 @@ private
     params.require(:recipe).permit(
       :title,
       ingredients_attributes: [
+        ingredients:[
         :name,
-        :quantity
+        :quantity]
       ]
     )
   end
